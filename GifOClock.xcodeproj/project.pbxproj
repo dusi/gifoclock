@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		778E030F1AC256DE0087E27F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E030E1AC256DE0087E27F /* AppDelegate.swift */; };
 		778E03111AC256DE0087E27F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E03101AC256DE0087E27F /* ViewController.swift */; };
-		778E03141AC256DE0087E27F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 778E03121AC256DE0087E27F /* Main.storyboard */; };
 		778E03161AC256DE0087E27F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 778E03151AC256DE0087E27F /* Images.xcassets */; };
 		778E03191AC256DE0087E27F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 778E03171AC256DE0087E27F /* LaunchScreen.xib */; };
 		778E03251AC256DE0087E27F /* GifOClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E03241AC256DE0087E27F /* GifOClockTests.swift */; };
@@ -30,7 +29,6 @@
 		778E030D1AC256DE0087E27F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		778E030E1AC256DE0087E27F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		778E03101AC256DE0087E27F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		778E03131AC256DE0087E27F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		778E03151AC256DE0087E27F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		778E03181AC256DE0087E27F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		778E031E1AC256DE0087E27F /* GifOClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GifOClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,7 +77,6 @@
 			children = (
 				778E030E1AC256DE0087E27F /* AppDelegate.swift */,
 				778E03101AC256DE0087E27F /* ViewController.swift */,
-				778E03121AC256DE0087E27F /* Main.storyboard */,
 				778E03151AC256DE0087E27F /* Images.xcassets */,
 				778E03171AC256DE0087E27F /* LaunchScreen.xib */,
 				778E030C1AC256DE0087E27F /* Supporting Files */,
@@ -192,7 +189,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				778E03141AC256DE0087E27F /* Main.storyboard in Resources */,
 				778E03191AC256DE0087E27F /* LaunchScreen.xib in Resources */,
 				778E03161AC256DE0087E27F /* Images.xcassets in Resources */,
 			);
@@ -236,14 +232,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		778E03121AC256DE0087E27F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				778E03131AC256DE0087E27F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		778E03171AC256DE0087E27F /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
