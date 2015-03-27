@@ -7,8 +7,17 @@
 //
 
 import UIKit
+import GifOClockKit
 
 class ViewController: UIViewController {
+    
+    // MARK: - Properties
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    var items = [Gif]()
+    
+    // MARK: - Lifecycle
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,8 +39,34 @@ extension ViewController: UISearchBarDelegate {
         searchBar.setShowsCancelButton(false, animated: true)
     }
     
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        gifSearch(searchBar.text, { items in
+            self.items = items
+            self.collectionView.reloadData()
+        })
+    }
+    
     func searchBarCancelButtonClicked(searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
+    }
+    
+}
+
+extension ViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return items.count
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("GifCell", forIndexPath: indexPath) as! UICollectionViewCell
+        cell.backgroundColor = UIColor.greenColor()
+        return cell
+    }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        let dimension = CGRectGetWidth(view.frame) / 2 - 0.5
+        return CGSizeMake(dimension, dimension)
     }
     
 }
