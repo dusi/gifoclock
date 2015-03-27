@@ -13,6 +13,17 @@
 		778E03191AC256DE0087E27F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 778E03171AC256DE0087E27F /* LaunchScreen.xib */; };
 		778E03251AC256DE0087E27F /* GifOClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E03241AC256DE0087E27F /* GifOClockTests.swift */; };
 		CDA099661AC51F4B00A5580D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDA099651AC51F4B00A5580D /* Main.storyboard */; };
+		CDA099711AC51FEE00A5580D /* GifOClockKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CDA099701AC51FEE00A5580D /* GifOClockKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDA099771AC51FEE00A5580D /* GifOClockKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA0996C1AC51FEE00A5580D /* GifOClockKit.framework */; };
+		CDA099801AC51FEE00A5580D /* GifOClockKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA0997F1AC51FEE00A5580D /* GifOClockKitTests.swift */; };
+		CDA099831AC51FEE00A5580D /* GifOClockKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA0996C1AC51FEE00A5580D /* GifOClockKit.framework */; };
+		CDA099841AC51FEE00A5580D /* GifOClockKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDA0996C1AC51FEE00A5580D /* GifOClockKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CDA0998F1AC5201F00A5580D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA0998E1AC5201F00A5580D /* Model.swift */; };
+		CDA099951AC5202600A5580D /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA099901AC5202600A5580D /* Mapper.swift */; };
+		CDA099961AC5202600A5580D /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA099911AC5202600A5580D /* Operators.swift */; };
+		CDA099971AC5202600A5580D /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA099921AC5202600A5580D /* Parser.swift */; };
+		CDA099981AC5202600A5580D /* GifNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA099931AC5202600A5580D /* GifNetworking.swift */; };
+		CDA099991AC5202600A5580D /* TinyNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA099941AC5202600A5580D /* TinyNetworking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +34,42 @@
 			remoteGlobalIDString = 778E03081AC256DE0087E27F;
 			remoteInfo = GifOClock;
 		};
+		CDA099781AC51FEE00A5580D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 778E03011AC256DE0087E27F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDA0996B1AC51FEE00A5580D;
+			remoteInfo = GifOClockKit;
+		};
+		CDA0997A1AC51FEE00A5580D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 778E03011AC256DE0087E27F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 778E03081AC256DE0087E27F;
+			remoteInfo = GifOClock;
+		};
+		CDA099811AC51FEE00A5580D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 778E03011AC256DE0087E27F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDA0996B1AC51FEE00A5580D;
+			remoteInfo = GifOClockKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CDA099881AC51FEE00A5580D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CDA099841AC51FEE00A5580D /* GifOClockKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		778E03091AC256DE0087E27F /* GifOClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GifOClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +82,18 @@
 		778E03231AC256DE0087E27F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		778E03241AC256DE0087E27F /* GifOClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifOClockTests.swift; sourceTree = "<group>"; };
 		CDA099651AC51F4B00A5580D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CDA0996C1AC51FEE00A5580D /* GifOClockKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GifOClockKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDA0996F1AC51FEE00A5580D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDA099701AC51FEE00A5580D /* GifOClockKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GifOClockKit.h; sourceTree = "<group>"; };
+		CDA099761AC51FEE00A5580D /* GifOClockKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GifOClockKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDA0997E1AC51FEE00A5580D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDA0997F1AC51FEE00A5580D /* GifOClockKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifOClockKitTests.swift; sourceTree = "<group>"; };
+		CDA0998E1AC5201F00A5580D /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		CDA099901AC5202600A5580D /* Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
+		CDA099911AC5202600A5580D /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		CDA099921AC5202600A5580D /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		CDA099931AC5202600A5580D /* GifNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifNetworking.swift; sourceTree = "<group>"; };
+		CDA099941AC5202600A5580D /* TinyNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinyNetworking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDA099831AC51FEE00A5580D /* GifOClockKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +109,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDA099681AC51FEE00A5580D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDA099731AC51FEE00A5580D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDA099771AC51FEE00A5580D /* GifOClockKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +135,8 @@
 			children = (
 				778E030B1AC256DE0087E27F /* GifOClock */,
 				778E03211AC256DE0087E27F /* GifOClockTests */,
+				CDA0996D1AC51FEE00A5580D /* GifOClockKit */,
+				CDA0997C1AC51FEE00A5580D /* GifOClockKitTests */,
 				778E030A1AC256DE0087E27F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +146,8 @@
 			children = (
 				778E03091AC256DE0087E27F /* GifOClock.app */,
 				778E031E1AC256DE0087E27F /* GifOClockTests.xctest */,
+				CDA0996C1AC51FEE00A5580D /* GifOClockKit.framework */,
+				CDA099761AC51FEE00A5580D /* GifOClockKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,7 +190,74 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CDA0996D1AC51FEE00A5580D /* GifOClockKit */ = {
+			isa = PBXGroup;
+			children = (
+				CDA0998C1AC5200900A5580D /* Model */,
+				CDA0998D1AC5200C00A5580D /* Networking */,
+				CDA099701AC51FEE00A5580D /* GifOClockKit.h */,
+				CDA0996E1AC51FEE00A5580D /* Supporting Files */,
+			);
+			path = GifOClockKit;
+			sourceTree = "<group>";
+		};
+		CDA0996E1AC51FEE00A5580D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDA0996F1AC51FEE00A5580D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDA0997C1AC51FEE00A5580D /* GifOClockKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				CDA0997F1AC51FEE00A5580D /* GifOClockKitTests.swift */,
+				CDA0997D1AC51FEE00A5580D /* Supporting Files */,
+			);
+			path = GifOClockKitTests;
+			sourceTree = "<group>";
+		};
+		CDA0997D1AC51FEE00A5580D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDA0997E1AC51FEE00A5580D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDA0998C1AC5200900A5580D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CDA0998E1AC5201F00A5580D /* Model.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CDA0998D1AC5200C00A5580D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CDA099901AC5202600A5580D /* Mapper.swift */,
+				CDA099911AC5202600A5580D /* Operators.swift */,
+				CDA099921AC5202600A5580D /* Parser.swift */,
+				CDA099931AC5202600A5580D /* GifNetworking.swift */,
+				CDA099941AC5202600A5580D /* TinyNetworking.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CDA099691AC51FEE00A5580D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDA099711AC51FEE00A5580D /* GifOClockKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		778E03081AC256DE0087E27F /* GifOClock */ = {
@@ -122,10 +267,12 @@
 				778E03051AC256DE0087E27F /* Sources */,
 				778E03061AC256DE0087E27F /* Frameworks */,
 				778E03071AC256DE0087E27F /* Resources */,
+				CDA099881AC51FEE00A5580D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CDA099821AC51FEE00A5580D /* PBXTargetDependency */,
 			);
 			name = GifOClock;
 			productName = GifOClock;
@@ -150,6 +297,43 @@
 			productReference = 778E031E1AC256DE0087E27F /* GifOClockTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		CDA0996B1AC51FEE00A5580D /* GifOClockKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDA099851AC51FEE00A5580D /* Build configuration list for PBXNativeTarget "GifOClockKit" */;
+			buildPhases = (
+				CDA099671AC51FEE00A5580D /* Sources */,
+				CDA099681AC51FEE00A5580D /* Frameworks */,
+				CDA099691AC51FEE00A5580D /* Headers */,
+				CDA0996A1AC51FEE00A5580D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GifOClockKit;
+			productName = GifOClockKit;
+			productReference = CDA0996C1AC51FEE00A5580D /* GifOClockKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CDA099751AC51FEE00A5580D /* GifOClockKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDA099891AC51FEE00A5580D /* Build configuration list for PBXNativeTarget "GifOClockKitTests" */;
+			buildPhases = (
+				CDA099721AC51FEE00A5580D /* Sources */,
+				CDA099731AC51FEE00A5580D /* Frameworks */,
+				CDA099741AC51FEE00A5580D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDA099791AC51FEE00A5580D /* PBXTargetDependency */,
+				CDA0997B1AC51FEE00A5580D /* PBXTargetDependency */,
+			);
+			name = GifOClockKitTests;
+			productName = GifOClockKitTests;
+			productReference = CDA099761AC51FEE00A5580D /* GifOClockKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -163,6 +347,13 @@
 						CreatedOnToolsVersion = 6.3;
 					};
 					778E031D1AC256DE0087E27F = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 778E03081AC256DE0087E27F;
+					};
+					CDA0996B1AC51FEE00A5580D = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					CDA099751AC51FEE00A5580D = {
 						CreatedOnToolsVersion = 6.3;
 						TestTargetID = 778E03081AC256DE0087E27F;
 					};
@@ -183,6 +374,8 @@
 			targets = (
 				778E03081AC256DE0087E27F /* GifOClock */,
 				778E031D1AC256DE0087E27F /* GifOClockTests */,
+				CDA0996B1AC51FEE00A5580D /* GifOClockKit */,
+				CDA099751AC51FEE00A5580D /* GifOClockKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -199,6 +392,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		778E031C1AC256DE0087E27F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDA0996A1AC51FEE00A5580D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDA099741AC51FEE00A5580D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -225,6 +432,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CDA099671AC51FEE00A5580D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDA099971AC5202600A5580D /* Parser.swift in Sources */,
+				CDA099951AC5202600A5580D /* Mapper.swift in Sources */,
+				CDA0998F1AC5201F00A5580D /* Model.swift in Sources */,
+				CDA099991AC5202600A5580D /* TinyNetworking.swift in Sources */,
+				CDA099981AC5202600A5580D /* GifNetworking.swift in Sources */,
+				CDA099961AC5202600A5580D /* Operators.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDA099721AC51FEE00A5580D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDA099801AC51FEE00A5580D /* GifOClockKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +460,21 @@
 			isa = PBXTargetDependency;
 			target = 778E03081AC256DE0087E27F /* GifOClock */;
 			targetProxy = 778E031F1AC256DE0087E27F /* PBXContainerItemProxy */;
+		};
+		CDA099791AC51FEE00A5580D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDA0996B1AC51FEE00A5580D /* GifOClockKit */;
+			targetProxy = CDA099781AC51FEE00A5580D /* PBXContainerItemProxy */;
+		};
+		CDA0997B1AC51FEE00A5580D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 778E03081AC256DE0087E27F /* GifOClock */;
+			targetProxy = CDA0997A1AC51FEE00A5580D /* PBXContainerItemProxy */;
+		};
+		CDA099821AC51FEE00A5580D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDA0996B1AC51FEE00A5580D /* GifOClockKit */;
+			targetProxy = CDA099811AC51FEE00A5580D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -382,6 +625,83 @@
 			};
 			name = Release;
 		};
+		CDA099861AC51FEE00A5580D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GifOClockKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CDA099871AC51FEE00A5580D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = GifOClockKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CDA0998A1AC51FEE00A5580D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GifOClockKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GifOClock.app/GifOClock";
+			};
+			name = Debug;
+		};
+		CDA0998B1AC51FEE00A5580D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GifOClockKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GifOClock.app/GifOClock";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -411,6 +731,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		CDA099851AC51FEE00A5580D /* Build configuration list for PBXNativeTarget "GifOClockKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDA099861AC51FEE00A5580D /* Debug */,
+				CDA099871AC51FEE00A5580D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CDA099891AC51FEE00A5580D /* Build configuration list for PBXNativeTarget "GifOClockKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDA0998A1AC51FEE00A5580D /* Debug */,
+				CDA0998B1AC51FEE00A5580D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
