@@ -59,8 +59,8 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegateFl
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("GifCell", forIndexPath: indexPath) as! UICollectionViewCell
-        cell.backgroundColor = UIColor.greenColor()
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("GifCell", forIndexPath: indexPath) as! GifCell
+        cell.url = items[indexPath.row].normalUrl
         return cell
     }
     

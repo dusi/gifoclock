@@ -12,6 +12,9 @@
 		778E03161AC256DE0087E27F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 778E03151AC256DE0087E27F /* Images.xcassets */; };
 		778E03191AC256DE0087E27F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 778E03171AC256DE0087E27F /* LaunchScreen.xib */; };
 		778E03251AC256DE0087E27F /* GifOClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E03241AC256DE0087E27F /* GifOClockTests.swift */; };
+		CD9F595A1AC5244C00EF7D37 /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9F59571AC5244C00EF7D37 /* FLAnimatedImage.m */; };
+		CD9F595B1AC5244C00EF7D37 /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9F59591AC5244C00EF7D37 /* FLAnimatedImageView.m */; };
+		CD9F595D1AC5254300EF7D37 /* GifCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9F595C1AC5254300EF7D37 /* GifCell.swift */; };
 		CDA099661AC51F4B00A5580D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDA099651AC51F4B00A5580D /* Main.storyboard */; };
 		CDA099711AC51FEE00A5580D /* GifOClockKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CDA099701AC51FEE00A5580D /* GifOClockKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CDA099771AC51FEE00A5580D /* GifOClockKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA0996C1AC51FEE00A5580D /* GifOClockKit.framework */; };
@@ -81,6 +84,12 @@
 		778E031E1AC256DE0087E27F /* GifOClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GifOClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		778E03231AC256DE0087E27F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		778E03241AC256DE0087E27F /* GifOClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifOClockTests.swift; sourceTree = "<group>"; };
+		CD9F59551AC5244B00EF7D37 /* GifOClock-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GifOClock-Bridging-Header.h"; sourceTree = "<group>"; };
+		CD9F59561AC5244C00EF7D37 /* FLAnimatedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImage.h; sourceTree = "<group>"; };
+		CD9F59571AC5244C00EF7D37 /* FLAnimatedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImage.m; sourceTree = "<group>"; };
+		CD9F59581AC5244C00EF7D37 /* FLAnimatedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImageView.h; sourceTree = "<group>"; };
+		CD9F59591AC5244C00EF7D37 /* FLAnimatedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImageView.m; sourceTree = "<group>"; };
+		CD9F595C1AC5254300EF7D37 /* GifCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifCell.swift; sourceTree = "<group>"; };
 		CDA099651AC51F4B00A5580D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CDA0996C1AC51FEE00A5580D /* GifOClockKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GifOClockKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDA0996F1AC51FEE00A5580D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -155,11 +164,14 @@
 		778E030B1AC256DE0087E27F /* GifOClock */ = {
 			isa = PBXGroup;
 			children = (
+				CD9F59531AC5243700EF7D37 /* Vendor */,
 				778E030E1AC256DE0087E27F /* AppDelegate.swift */,
 				778E03101AC256DE0087E27F /* ViewController.swift */,
+				CD9F595C1AC5254300EF7D37 /* GifCell.swift */,
 				CDA099651AC51F4B00A5580D /* Main.storyboard */,
 				778E03151AC256DE0087E27F /* Images.xcassets */,
 				778E03171AC256DE0087E27F /* LaunchScreen.xib */,
+				CD9F59551AC5244B00EF7D37 /* GifOClock-Bridging-Header.h */,
 				778E030C1AC256DE0087E27F /* Supporting Files */,
 			);
 			path = GifOClock;
@@ -188,6 +200,25 @@
 				778E03231AC256DE0087E27F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD9F59531AC5243700EF7D37 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				CD9F59541AC5244000EF7D37 /* FLAnimatedImage */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		CD9F59541AC5244000EF7D37 /* FLAnimatedImage */ = {
+			isa = PBXGroup;
+			children = (
+				CD9F59561AC5244C00EF7D37 /* FLAnimatedImage.h */,
+				CD9F59571AC5244C00EF7D37 /* FLAnimatedImage.m */,
+				CD9F59581AC5244C00EF7D37 /* FLAnimatedImageView.h */,
+				CD9F59591AC5244C00EF7D37 /* FLAnimatedImageView.m */,
+			);
+			name = FLAnimatedImage;
 			sourceTree = "<group>";
 		};
 		CDA0996D1AC51FEE00A5580D /* GifOClockKit */ = {
@@ -421,6 +452,9 @@
 			files = (
 				778E03111AC256DE0087E27F /* ViewController.swift in Sources */,
 				778E030F1AC256DE0087E27F /* AppDelegate.swift in Sources */,
+				CD9F595D1AC5254300EF7D37 /* GifCell.swift in Sources */,
+				CD9F595A1AC5244C00EF7D37 /* FLAnimatedImage.m in Sources */,
+				CD9F595B1AC5244C00EF7D37 /* FLAnimatedImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,9 +609,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = GifOClock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GifOClock/GifOClock-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -585,9 +622,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = GifOClock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GifOClock/GifOClock-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -739,6 +778,7 @@
 				CDA099871AC51FEE00A5580D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CDA099891AC51FEE00A5580D /* Build configuration list for PBXNativeTarget "GifOClockKitTests" */ = {
 			isa = XCConfigurationList;
@@ -747,6 +787,7 @@
 				CDA0998B1AC51FEE00A5580D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
