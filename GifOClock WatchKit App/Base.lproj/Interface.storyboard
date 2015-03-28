@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7528.3" systemVersion="14C1514" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7518.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="GifOClock_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="Hodor" id="eq3-R1-nK7">
+                            <color key="titleColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="showTextInput" destination="AgC-eL-Hgc" id="umm-Ei-NvW"/>
+                            </connections>
+                        </button>
+                        <group width="134" alignment="left" id="jsn-Ln-jeq">
+                            <items>
+                                <button alignment="left" title="🐱" id="P5B-rK-8vo">
+                                    <connections>
+                                        <action selector="searchCat" destination="AgC-eL-Hgc" id="V39-Pi-4Ni"/>
+                                    </connections>
+                                </button>
+                                <button alignment="left" title="🐶" id="kyj-rg-MIp">
+                                    <connections>
+                                        <action selector="searchDog" destination="AgC-eL-Hgc" id="tNd-Rx-Uba"/>
+                                    </connections>
+                                </button>
+                                <button alignment="left" title="🍺" id="vpd-H0-D2y">
+                                    <connections>
+                                        <action selector="searchBeer" destination="AgC-eL-Hgc" id="93L-62-d5Q"/>
+                                    </connections>
+                                </button>
+                                <button alignment="left" title="💃" id="Go3-UA-KTy">
+                                    <connections>
+                                        <action selector="searchDance" destination="AgC-eL-Hgc" id="3Ed-Mv-gnp"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="bVS-ha-aGE">
+                            <items>
+                                <button alignment="left" title="Epic" id="1zh-Xr-1Ee">
+                                    <color key="titleColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="searchEpic" destination="AgC-eL-Hgc" id="lMY-Hv-MZD"/>
+                                    </connections>
+                                </button>
+                                <button alignment="left" title="Fail" id="ouB-Kz-aJN">
+                                    <color key="titleColor" red="1" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="searchFail" destination="AgC-eL-Hgc" id="1OP-MS-D3r"/>
+                                    </connections>
+                                </button>
+                                <button alignment="left" title="Jump" id="5rX-Nt-WuK">
+                                    <color key="titleColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="searchJump" destination="AgC-eL-Hgc" id="f6u-Kk-hR2"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="45p-fF-kaj">
+                            <items>
+                                <button alignment="left" title="Nicolas Cage" id="kzX-oQ-2ND">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="searchNicolasCage" destination="AgC-eL-Hgc" id="FCD-4M-2cR"/>
+                                    </connections>
+                                </button>
+                                <button alignment="left" title="Ninja" id="tqS-Iv-IGA">
+                                    <color key="titleColor" red="1" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="searchNinja" destination="AgC-eL-Hgc" id="i4I-pR-cQx"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="erR-dI-xbU">
+                            <items>
+                                <button alignment="left" title="🐼" id="Ih5-9f-inz">
+                                    <connections>
+                                        <action selector="searchPanda" destination="AgC-eL-Hgc" id="gef-Cr-DiO"/>
+                                    </connections>
+                                </button>
+                                <button alignment="left" title="Party" id="gwa-8Q-HDp">
+                                    <color key="titleColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="searchParty" destination="AgC-eL-Hgc" id="nqd-et-oFw"/>
+                                    </connections>
+                                </button>
+                                <button alignment="left" title="Reaction" id="MnB-Ar-PBs">
+                                    <color key="titleColor" red="0.40000000596046448" green="1" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="searchReaction" destination="AgC-eL-Hgc" id="2Jl-zV-wf3"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="ghu-3M-IYf">
+                            <items>
+                                <button alignment="left" title="Smile" id="tf2-zs-QRr">
+                                    <color key="titleColor" red="1" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="searchSmile" destination="AgC-eL-Hgc" id="Gyk-El-iJb"/>
+                                    </connections>
+                                </button>
+                                <button alignment="left" title="Welcome" id="EJ3-fJ-mf5">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="searchWelcome" destination="AgC-eL-Hgc" id="1q0-vc-Noo"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="268" y="349.25"/>
+        </scene>
+    </scenes>
+</document>

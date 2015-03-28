@@ -12,6 +12,12 @@
 		778E03161AC256DE0087E27F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 778E03151AC256DE0087E27F /* Images.xcassets */; };
 		778E03191AC256DE0087E27F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 778E03171AC256DE0087E27F /* LaunchScreen.xib */; };
 		778E03251AC256DE0087E27F /* GifOClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E03241AC256DE0087E27F /* GifOClockTests.swift */; };
+		CD46BEA41AC63E5B00DB3B18 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD46BEA31AC63E5B00DB3B18 /* InterfaceController.swift */; };
+		CD46BEA61AC63E5B00DB3B18 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD46BEA51AC63E5B00DB3B18 /* Images.xcassets */; };
+		CD46BEAA1AC63E5B00DB3B18 /* GifOClock WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = CD46BEA91AC63E5B00DB3B18 /* GifOClock WatchKit App.app */; };
+		CD46BEB21AC63E5B00DB3B18 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD46BEB01AC63E5B00DB3B18 /* Interface.storyboard */; };
+		CD46BEB41AC63E5B00DB3B18 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD46BEB31AC63E5B00DB3B18 /* Images.xcassets */; };
+		CD46BEB71AC63E5B00DB3B18 /* GifOClock WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CD46BE9F1AC63E5B00DB3B18 /* GifOClock WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CD9F595A1AC5244C00EF7D37 /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9F59571AC5244C00EF7D37 /* FLAnimatedImage.m */; };
 		CD9F595B1AC5244C00EF7D37 /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9F59591AC5244C00EF7D37 /* FLAnimatedImageView.m */; };
 		CD9F595D1AC5254300EF7D37 /* GifCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9F595C1AC5254300EF7D37 /* GifCell.swift */; };
@@ -37,6 +43,20 @@
 			remoteGlobalIDString = 778E03081AC256DE0087E27F;
 			remoteInfo = GifOClock;
 		};
+		CD46BEAB1AC63E5B00DB3B18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 778E03011AC256DE0087E27F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD46BEA81AC63E5B00DB3B18;
+			remoteInfo = "GifOClock WatchKit App";
+		};
+		CD46BEB51AC63E5B00DB3B18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 778E03011AC256DE0087E27F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD46BE9E1AC63E5B00DB3B18;
+			remoteInfo = "GifOClock WatchKit Extension";
+		};
 		CDA099781AC51FEE00A5580D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 778E03011AC256DE0087E27F /* Project object */;
@@ -61,6 +81,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		CD46BEBE1AC63E5B00DB3B18 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CD46BEB71AC63E5B00DB3B18 /* GifOClock WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CDA099881AC51FEE00A5580D /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -84,6 +115,14 @@
 		778E031E1AC256DE0087E27F /* GifOClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GifOClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		778E03231AC256DE0087E27F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		778E03241AC256DE0087E27F /* GifOClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifOClockTests.swift; sourceTree = "<group>"; };
+		CD46BE9F1AC63E5B00DB3B18 /* GifOClock WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GifOClock WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD46BEA21AC63E5B00DB3B18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD46BEA31AC63E5B00DB3B18 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		CD46BEA51AC63E5B00DB3B18 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CD46BEA91AC63E5B00DB3B18 /* GifOClock WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GifOClock WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD46BEAF1AC63E5B00DB3B18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD46BEB11AC63E5B00DB3B18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		CD46BEB31AC63E5B00DB3B18 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CD9F59551AC5244B00EF7D37 /* GifOClock-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GifOClock-Bridging-Header.h"; sourceTree = "<group>"; };
 		CD9F59561AC5244C00EF7D37 /* FLAnimatedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImage.h; sourceTree = "<group>"; };
 		CD9F59571AC5244C00EF7D37 /* FLAnimatedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImage.m; sourceTree = "<group>"; };
@@ -121,6 +160,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CD46BE9C1AC63E5B00DB3B18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CDA099681AC51FEE00A5580D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -146,6 +192,8 @@
 				778E03211AC256DE0087E27F /* GifOClockTests */,
 				CDA0996D1AC51FEE00A5580D /* GifOClockKit */,
 				CDA0997C1AC51FEE00A5580D /* GifOClockKitTests */,
+				CD46BEA01AC63E5B00DB3B18 /* GifOClock WatchKit Extension */,
+				CD46BEAD1AC63E5B00DB3B18 /* GifOClock WatchKit App */,
 				778E030A1AC256DE0087E27F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -157,6 +205,8 @@
 				778E031E1AC256DE0087E27F /* GifOClockTests.xctest */,
 				CDA0996C1AC51FEE00A5580D /* GifOClockKit.framework */,
 				CDA099761AC51FEE00A5580D /* GifOClockKitTests.xctest */,
+				CD46BE9F1AC63E5B00DB3B18 /* GifOClock WatchKit Extension.appex */,
+				CD46BEA91AC63E5B00DB3B18 /* GifOClock WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -198,6 +248,42 @@
 			isa = PBXGroup;
 			children = (
 				778E03231AC256DE0087E27F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD46BEA01AC63E5B00DB3B18 /* GifOClock WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CD46BEA31AC63E5B00DB3B18 /* InterfaceController.swift */,
+				CD46BEA51AC63E5B00DB3B18 /* Images.xcassets */,
+				CD46BEA11AC63E5B00DB3B18 /* Supporting Files */,
+			);
+			path = "GifOClock WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		CD46BEA11AC63E5B00DB3B18 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD46BEA21AC63E5B00DB3B18 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD46BEAD1AC63E5B00DB3B18 /* GifOClock WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				CD46BEB01AC63E5B00DB3B18 /* Interface.storyboard */,
+				CD46BEB31AC63E5B00DB3B18 /* Images.xcassets */,
+				CD46BEAE1AC63E5B00DB3B18 /* Supporting Files */,
+			);
+			path = "GifOClock WatchKit App";
+			sourceTree = "<group>";
+		};
+		CD46BEAE1AC63E5B00DB3B18 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD46BEAF1AC63E5B00DB3B18 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -299,11 +385,13 @@
 				778E03061AC256DE0087E27F /* Frameworks */,
 				778E03071AC256DE0087E27F /* Resources */,
 				CDA099881AC51FEE00A5580D /* Embed Frameworks */,
+				CD46BEBE1AC63E5B00DB3B18 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				CDA099821AC51FEE00A5580D /* PBXTargetDependency */,
+				CD46BEB61AC63E5B00DB3B18 /* PBXTargetDependency */,
 			);
 			name = GifOClock;
 			productName = GifOClock;
@@ -327,6 +415,39 @@
 			productName = GifOClockTests;
 			productReference = 778E031E1AC256DE0087E27F /* GifOClockTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD46BE9E1AC63E5B00DB3B18 /* GifOClock WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD46BEBD1AC63E5B00DB3B18 /* Build configuration list for PBXNativeTarget "GifOClock WatchKit Extension" */;
+			buildPhases = (
+				CD46BE9B1AC63E5B00DB3B18 /* Sources */,
+				CD46BE9C1AC63E5B00DB3B18 /* Frameworks */,
+				CD46BE9D1AC63E5B00DB3B18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD46BEAC1AC63E5B00DB3B18 /* PBXTargetDependency */,
+			);
+			name = "GifOClock WatchKit Extension";
+			productName = "GifOClock WatchKit Extension";
+			productReference = CD46BE9F1AC63E5B00DB3B18 /* GifOClock WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		CD46BEA81AC63E5B00DB3B18 /* GifOClock WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD46BEBC1AC63E5B00DB3B18 /* Build configuration list for PBXNativeTarget "GifOClock WatchKit App" */;
+			buildPhases = (
+				CD46BEA71AC63E5B00DB3B18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GifOClock WatchKit App";
+			productName = "GifOClock WatchKit App";
+			productReference = CD46BEA91AC63E5B00DB3B18 /* GifOClock WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
 		};
 		CDA0996B1AC51FEE00A5580D /* GifOClockKit */ = {
 			isa = PBXNativeTarget;
@@ -381,6 +502,12 @@
 						CreatedOnToolsVersion = 6.3;
 						TestTargetID = 778E03081AC256DE0087E27F;
 					};
+					CD46BE9E1AC63E5B00DB3B18 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					CD46BEA81AC63E5B00DB3B18 = {
+						CreatedOnToolsVersion = 6.3;
+					};
 					CDA0996B1AC51FEE00A5580D = {
 						CreatedOnToolsVersion = 6.3;
 					};
@@ -407,6 +534,8 @@
 				778E031D1AC256DE0087E27F /* GifOClockTests */,
 				CDA0996B1AC51FEE00A5580D /* GifOClockKit */,
 				CDA099751AC51FEE00A5580D /* GifOClockKitTests */,
+				CD46BE9E1AC63E5B00DB3B18 /* GifOClock WatchKit Extension */,
+				CD46BEA81AC63E5B00DB3B18 /* GifOClock WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -426,6 +555,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD46BE9D1AC63E5B00DB3B18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD46BEAA1AC63E5B00DB3B18 /* GifOClock WatchKit App.app in Resources */,
+				CD46BEA61AC63E5B00DB3B18 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD46BEA71AC63E5B00DB3B18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD46BEB21AC63E5B00DB3B18 /* Interface.storyboard in Resources */,
+				CD46BEB41AC63E5B00DB3B18 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +613,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CD46BE9B1AC63E5B00DB3B18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD46BEA41AC63E5B00DB3B18 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CDA099671AC51FEE00A5580D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -495,6 +650,16 @@
 			target = 778E03081AC256DE0087E27F /* GifOClock */;
 			targetProxy = 778E031F1AC256DE0087E27F /* PBXContainerItemProxy */;
 		};
+		CD46BEAC1AC63E5B00DB3B18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD46BEA81AC63E5B00DB3B18 /* GifOClock WatchKit App */;
+			targetProxy = CD46BEAB1AC63E5B00DB3B18 /* PBXContainerItemProxy */;
+		};
+		CD46BEB61AC63E5B00DB3B18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD46BE9E1AC63E5B00DB3B18 /* GifOClock WatchKit Extension */;
+			targetProxy = CD46BEB51AC63E5B00DB3B18 /* PBXContainerItemProxy */;
+		};
 		CDA099791AC51FEE00A5580D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CDA0996B1AC51FEE00A5580D /* GifOClockKit */;
@@ -519,6 +684,14 @@
 				778E03181AC256DE0087E27F /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		CD46BEB01AC63E5B00DB3B18 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD46BEB11AC63E5B00DB3B18 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -664,6 +837,62 @@
 			};
 			name = Release;
 		};
+		CD46BEB81AC63E5B00DB3B18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GifOClock WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CD46BEB91AC63E5B00DB3B18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "GifOClock WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CD46BEBA1AC63E5B00DB3B18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = GifOClock_WatchKit_Extension;
+				INFOPLIST_FILE = "GifOClock WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		CD46BEBB1AC63E5B00DB3B18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = GifOClock_WatchKit_Extension;
+				INFOPLIST_FILE = "GifOClock WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
 		CDA099861AC51FEE00A5580D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -770,6 +999,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		CD46BEBC1AC63E5B00DB3B18 /* Build configuration list for PBXNativeTarget "GifOClock WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD46BEBA1AC63E5B00DB3B18 /* Debug */,
+				CD46BEBB1AC63E5B00DB3B18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CD46BEBD1AC63E5B00DB3B18 /* Build configuration list for PBXNativeTarget "GifOClock WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD46BEB81AC63E5B00DB3B18 /* Debug */,
+				CD46BEB91AC63E5B00DB3B18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		CDA099851AC51FEE00A5580D /* Build configuration list for PBXNativeTarget "GifOClockKit" */ = {
 			isa = XCConfigurationList;
