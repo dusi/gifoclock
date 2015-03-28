@@ -32,12 +32,18 @@ class InterfaceController: WKInterfaceController {
     // MARK: - Actions
     
     func search(text: String) {
-        println("text = \(text)")
+        WKInterfaceController.openParentApplication(["search.text": text], reply: { (reply, _) in
+            let filename = reply["search.filename"] as! String
+            let framesCount = reply["search.framesCount"] as! Int
+            
+            println("filename = \(filename)")
+            println("framesCount = \(framesCount)")
+        })
     }
 
     @IBAction func showTextInput() {
         presentTextInputControllerWithSuggestions(nil, allowedInputMode: .Plain) { input in
-            
+            // TODO: Implement when available
         }
     }
     

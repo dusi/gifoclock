@@ -19,5 +19,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
+    
+    func application(application: UIApplication, handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]?, reply: (([NSObject : AnyObject]!) -> Void)!) {
+        let filename = "filename"
+        let framesCount = 20
+        
+        reply(["search.filename": filename, "search.framesCount": framesCount])
+    }
+    
 }
 
