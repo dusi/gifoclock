@@ -53,6 +53,14 @@ func curry<A,B,C,D,R>(f: (A,B,C,D) -> R) -> A -> B -> C -> D -> R {
     return { a in { b in { c in { d in f(a,b,c,d) } } } }
 }
 
+func curry<A,B,C,D,E,R>(f: (A,B,C,D,E) -> R) -> A -> B -> C -> D -> E -> R {
+    return { a in { b in { c in { d in { e in f(a,b,c,d,e) } } } } }
+}
+
+func curry<A,B,C,D,E,G,R>(f: (A,B,C,D,E,G) -> R) -> A -> B -> C -> D -> E -> G -> R {
+    return { a in { b in { c in { d in { e in { g in f(a,b,c,d,e, g) } } } } } }
+}
+
 func join<A>(elements: [A?]) -> [A]? {
     var result: [A] = []
     for element in elements {
