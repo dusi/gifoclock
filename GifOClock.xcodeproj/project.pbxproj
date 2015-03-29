@@ -33,6 +33,7 @@
 		CDA099971AC5202600A5580D /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA099921AC5202600A5580D /* Parser.swift */; };
 		CDA099981AC5202600A5580D /* GifNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA099931AC5202600A5580D /* GifNetworking.swift */; };
 		CDA099991AC5202600A5580D /* TinyNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA099941AC5202600A5580D /* TinyNetworking.swift */; };
+		CDDF6AA01AC7909A003566A4 /* GIFConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDF6A9F1AC7909A003566A4 /* GIFConverter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +144,8 @@
 		CDA099921AC5202600A5580D /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		CDA099931AC5202600A5580D /* GifNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifNetworking.swift; sourceTree = "<group>"; };
 		CDA099941AC5202600A5580D /* TinyNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinyNetworking.swift; sourceTree = "<group>"; };
+		CDDF6A9E1AC7909A003566A4 /* GIFConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFConverter.h; sourceTree = "<group>"; };
+		CDDF6A9F1AC7909A003566A4 /* GIFConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFConverter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				CD9F59541AC5244000EF7D37 /* FLAnimatedImage */,
+				CDDF6A9D1AC79090003566A4 /* GIFConverter */,
 			);
 			name = Vendor;
 			sourceTree = "<group>";
@@ -363,6 +367,15 @@
 				CDA099941AC5202600A5580D /* TinyNetworking.swift */,
 			);
 			name = Networking;
+			sourceTree = "<group>";
+		};
+		CDDF6A9D1AC79090003566A4 /* GIFConverter */ = {
+			isa = PBXGroup;
+			children = (
+				CDDF6A9E1AC7909A003566A4 /* GIFConverter.h */,
+				CDDF6A9F1AC7909A003566A4 /* GIFConverter.m */,
+			);
+			name = GIFConverter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -606,6 +619,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				778E03111AC256DE0087E27F /* ViewController.swift in Sources */,
+				CDDF6AA01AC7909A003566A4 /* GIFConverter.m in Sources */,
 				778E030F1AC256DE0087E27F /* AppDelegate.swift in Sources */,
 				CD9F595D1AC5254300EF7D37 /* GifCell.swift in Sources */,
 				CD9F595A1AC5244C00EF7D37 /* FLAnimatedImage.m in Sources */,
