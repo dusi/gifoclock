@@ -10,7 +10,6 @@ import Foundation
 
 let baseURL = NSURL(string:"http://api.giphy.com/v1/gifs/")!
 let apiKey = "dc6zaTOxFJmzC"
-let limit = "100"
 
 public typealias Gifs = [Gif]
 
@@ -19,11 +18,15 @@ func defaultFailureHandler(failureReason: Reason, data: NSData?) {
     println("Failure: \(failureReason) \(string)")
 }
 
-func search(text: String) -> Resource<Gifs> {
+func search(text: String, limit: Int) -> Resource<Gifs> {
     let parameters = ["api_key": apiKey, "limit": limit, "q": text]
-    return jsonResource("search", .GET, parameters, parseSearch)
+    return jsonResource("search", .GET, parameters as! JSONDictionary, parseSearch)
 }
 
 public func gifSearch(text: String, completion: (Gifs) -> ()) {
-    apiRequest(baseURL, search(text), defaultFailureHandler) { completion($0) }
+    apiRequest(baseURL, search(text, 25), defaultFailureHandler) { completion($0) }
+}
+
+public func gifSearch(text: String, limit: Int, completion: (Gifs) -> ()) {
+    apiRequest(baseURL, search(text, limit), defaultFailureHandler) { completion($0) }
 }

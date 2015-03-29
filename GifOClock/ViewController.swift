@@ -40,7 +40,7 @@ extension ViewController: UISearchBarDelegate {
     }
     
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
-        gifSearch(searchBar.text, { items in
+        gifSearch(searchBar.text, 100, { items in
             self.items = items
             self.collectionView.reloadData()
         })
