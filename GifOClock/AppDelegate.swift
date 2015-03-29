@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GifOClockKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,11 +22,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(application: UIApplication, handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]?, reply: (([NSObject : AnyObject]!) -> Void)!) {
-        let filename = "filename"
-        let framesCount = 20
-        
-        reply(["search.filename": filename, "search.framesCount": framesCount])
+        gifSearch(userInfo?["search.text"] as! String, { items in
+            let gif = items.sample()
+            let filename = gif.id
+            GIFConverter().exportUrl(gif.smallUrl, size: CGSizeMake(CGFloat(gif.smallWidth), CGFloat(gif.smallHeight)), suiteName: "group.themis.gifoclock", filename: filename, completion: { framesCount in
+                reply(["search.filename": filename, "search.framesCount": framesCount])
+            })
+        })
     }
     
 }
 
+extension Array {
+    func sample() -> T {
+        let randomIndex = random() % count
+        return self[randomIndex]
+    }
+}
