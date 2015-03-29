@@ -12,8 +12,10 @@ public struct Gif {
     
     // MARK: - Properties
     
-    public var normalUrl: NSURL?
-    public var smallUrl: NSURL?
-    public var embedUrl: NSURL?
-    
+    public let id: String
+    public let normalUrl: NSURL?
+    public let smallUrl: NSURL?
+    public let embedUrl: NSURL?
+    public let smallWidth: Int
+    public let smallHeight: Int
 }
