@@ -9,6 +9,8 @@
 import UIKit
 import GifOClockKit
 
+let suiteName = "group.themis.gifoclock"
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -25,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         gifSearch(userInfo?["search.text"] as! String, { items in
             let gif = items.sample()
             let filename = gif.id
-            GIFConverter().exportUrl(gif.smallUrl, size: CGSizeMake(CGFloat(gif.smallWidth), CGFloat(gif.smallHeight)), suiteName: "group.themis.gifoclock", filename: filename, completion: { framesCount in
+            GIFConverter().exportUrl(gif.smallUrl, size: CGSizeMake(CGFloat(gif.smallWidth), CGFloat(gif.smallHeight)), suiteName: suiteName, filename: filename, completion: { framesCount in
                 reply(["search.filename": filename, "search.framesCount": framesCount])
             })
         })

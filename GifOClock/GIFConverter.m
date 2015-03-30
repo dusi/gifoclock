@@ -9,7 +9,7 @@
 - (id)init {
     self = [super init];
     if(self) {
-        backgroundQueue = dispatch_queue_create("com.gifoclock.export", NULL);
+        backgroundQueue = dispatch_queue_create("com.themis.gifoclock.exportQueue", NULL);
     }
     return self;
 }
@@ -19,25 +19,33 @@
 - (void)exportUrl:(NSURL *)url size:(CGSize)size suiteName:(NSString *)suiteName filename:(NSString *)filename completion:(void (^)(NSInteger framesCount))completion {
     dispatch_async(backgroundQueue, ^(void){
         NSFileManager *fileManager = [NSFileManager defaultManager];
+        NSURL *sharedUrl = [[fileManager containerURLForSecurityApplicationGroupIdentifier:suiteName] URLByAppendingPathComponent:@"Frames" isDirectory:YES];
+        NSString *sharedPath = sharedUrl.path;
         
-        // Remove existing files from shared folder
-        NSString *directory = [url.absoluteString stringByDeletingLastPathComponent];
-        NSArray *existingFiles = [fileManager contentsOfDirectoryAtPath:directory error:nil];
-        for (NSString *existingFilename in existingFiles)  {
-            [fileManager removeItemAtPath:[directory stringByAppendingPathComponent:existingFilename] error:NULL];
+        NSError *error = nil;
+        
+        BOOL isDirectory;
+        
+        // Remove cache
+        if ([fileManager fileExistsAtPath:sharedPath isDirectory:&isDirectory]) {
+            if (![fileManager removeItemAtPath:sharedPath error:&error]) {
+                NSLog(@"Error removing directory: \"%@\". Error: %@", sharedPath, error);
+            }
         }
         
-        // Save new image frames to shared folder
-        NSURL *url = [fileManager containerURLForSecurityApplicationGroupIdentifier:suiteName];
+        // Create directory
+        if(![fileManager createDirectoryAtPath:sharedPath withIntermediateDirectories:YES attributes:nil error:&error]) {
+            NSLog(@"Error creating directory: \"%@\". Error: %@", sharedPath, error);
+        }
+        
+        // Save files
         NSData *data = [NSData dataWithContentsOfURL:url];
         NSArray *frames = [self framesFromData:data size:size];
         for (int i = 0; i < frames.count; i++) {
-//            NSURL *url = [NSURL URLWithString:[path stringByAppendingString:[NSString stringWithFormat:@"-%@.png", @(i)]]];
-            url = [url URLByAppendingPathComponent:[NSString stringWithFormat:@"%@-%@.png", filename, @(i)]];
+            NSURL *writeUrl = [sharedUrl URLByAppendingPathComponent:[NSString stringWithFormat:@"%@-%@.png", filename, @(i)]];
             NSData *data = UIImagePNGRepresentation(frames[i]);
-            BOOL success = [data writeToURL:url atomically:YES];
-            if (!success) {
-                NSLog(@"Error writing file to url: %@", url);
+            if (![data writeToURL:writeUrl options:0 error:&error]) {
+                NSLog(@"Error writing file: \"%@\". Error: %@", url, error);
             }
         }
         
