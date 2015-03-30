@@ -12,12 +12,13 @@
 		778E03161AC256DE0087E27F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 778E03151AC256DE0087E27F /* Images.xcassets */; };
 		778E03191AC256DE0087E27F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 778E03171AC256DE0087E27F /* LaunchScreen.xib */; };
 		778E03251AC256DE0087E27F /* GifOClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E03241AC256DE0087E27F /* GifOClockTests.swift */; };
-		CD46BEA41AC63E5B00DB3B18 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD46BEA31AC63E5B00DB3B18 /* InterfaceController.swift */; };
+		CD1ECBBD1AC8D1A100E05A6E /* DetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1ECBBC1AC8D1A100E05A6E /* DetailInterfaceController.swift */; };
 		CD46BEA61AC63E5B00DB3B18 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD46BEA51AC63E5B00DB3B18 /* Images.xcassets */; };
 		CD46BEAA1AC63E5B00DB3B18 /* GifOClock WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = CD46BEA91AC63E5B00DB3B18 /* GifOClock WatchKit App.app */; };
 		CD46BEB21AC63E5B00DB3B18 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD46BEB01AC63E5B00DB3B18 /* Interface.storyboard */; };
 		CD46BEB41AC63E5B00DB3B18 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD46BEB31AC63E5B00DB3B18 /* Images.xcassets */; };
 		CD46BEB71AC63E5B00DB3B18 /* GifOClock WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CD46BE9F1AC63E5B00DB3B18 /* GifOClock WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CD4BA60A1AC8EB3100C676DE /* MainInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4BA6091AC8EB3100C676DE /* MainInterfaceController.swift */; };
 		CD9F595A1AC5244C00EF7D37 /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9F59571AC5244C00EF7D37 /* FLAnimatedImage.m */; };
 		CD9F595B1AC5244C00EF7D37 /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9F59591AC5244C00EF7D37 /* FLAnimatedImageView.m */; };
 		CD9F595D1AC5254300EF7D37 /* GifCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9F595C1AC5254300EF7D37 /* GifCell.swift */; };
@@ -116,14 +117,16 @@
 		778E031E1AC256DE0087E27F /* GifOClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GifOClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		778E03231AC256DE0087E27F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		778E03241AC256DE0087E27F /* GifOClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifOClockTests.swift; sourceTree = "<group>"; };
+		CD1ECBBC1AC8D1A100E05A6E /* DetailInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailInterfaceController.swift; sourceTree = "<group>"; };
+		CD1ECBBE1AC8D91B00E05A6E /* GifOClock WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "GifOClock WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		CD46BE9F1AC63E5B00DB3B18 /* GifOClock WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GifOClock WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD46BEA21AC63E5B00DB3B18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD46BEA31AC63E5B00DB3B18 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		CD46BEA51AC63E5B00DB3B18 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CD46BEA91AC63E5B00DB3B18 /* GifOClock WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GifOClock WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD46BEAF1AC63E5B00DB3B18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD46BEB11AC63E5B00DB3B18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		CD46BEB31AC63E5B00DB3B18 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CD4BA6091AC8EB3100C676DE /* MainInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainInterfaceController.swift; sourceTree = "<group>"; };
 		CD8BD62B1AC6860500F30878 /* GifOClock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = GifOClock.entitlements; sourceTree = "<group>"; };
 		CD9F59551AC5244B00EF7D37 /* GifOClock-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GifOClock-Bridging-Header.h"; sourceTree = "<group>"; };
 		CD9F59561AC5244C00EF7D37 /* FLAnimatedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImage.h; sourceTree = "<group>"; };
@@ -260,7 +263,9 @@
 		CD46BEA01AC63E5B00DB3B18 /* GifOClock WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				CD46BEA31AC63E5B00DB3B18 /* InterfaceController.swift */,
+				CD1ECBBE1AC8D91B00E05A6E /* GifOClock WatchKit Extension.entitlements */,
+				CD4BA6091AC8EB3100C676DE /* MainInterfaceController.swift */,
+				CD1ECBBC1AC8D1A100E05A6E /* DetailInterfaceController.swift */,
 				CD46BEA51AC63E5B00DB3B18 /* Images.xcassets */,
 				CD46BEA11AC63E5B00DB3B18 /* Supporting Files */,
 			);
@@ -512,7 +517,7 @@
 				TargetAttributes = {
 					778E03081AC256DE0087E27F = {
 						CreatedOnToolsVersion = 6.3;
-						DevelopmentTeam = AS6M6RMXFK;
+						DevelopmentTeam = L6G7AB6SPE;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -525,6 +530,12 @@
 					};
 					CD46BE9E1AC63E5B00DB3B18 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = L6G7AB6SPE;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					CD46BEA81AC63E5B00DB3B18 = {
 						CreatedOnToolsVersion = 6.3;
@@ -639,7 +650,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD46BEA41AC63E5B00DB3B18 /* InterfaceController.swift in Sources */,
+				CD4BA60A1AC8EB3100C676DE /* MainInterfaceController.swift in Sources */,
+				CD1ECBBD1AC8D1A100E05A6E /* DetailInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -870,6 +882,9 @@
 		CD46BEB81AC63E5B00DB3B18 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "GifOClock WatchKit Extension/GifOClock WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -877,6 +892,7 @@
 				INFOPLIST_FILE = "GifOClock WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -884,9 +900,13 @@
 		CD46BEB91AC63E5B00DB3B18 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "GifOClock WatchKit Extension/GifOClock WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "GifOClock WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
